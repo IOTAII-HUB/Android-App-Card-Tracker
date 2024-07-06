@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/cardview_light_background">
+
+
+    <ImageView
+        android:layout_width="289dp"
+        android:layout_height="140dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/red_icon" />
+
+    <TextView
+        android:id="@+id/userIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID Placeholder"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="V 2.2.5"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingEnd="16dp"/>
+
+    <!-- Other header content such as user profile image, name, etc. -->
+
+</LinearLayout>

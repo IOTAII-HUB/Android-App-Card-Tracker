@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iotaii.card_tracker.NewDeviceRegistrationActivity"
+    tools:layout_editor_absoluteX="6dp"
+    tools:layout_editor_absoluteY="78dp">
+
+
+    <Button
+        android:id="@+id/submit_device"
+        android:layout_width="160dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="119dp"
+        android:backgroundTint="#1A1919"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_of_purchase"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mob"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="@string/mobile"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/email_id"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_id" />
+
+    <EditText
+        android:id="@+id/device_id"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="@string/device_id"
+        android:inputType="text|date"
+        android:paddingStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <EditText
+        android:id="@+id/date_of_purchase"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="@string/date_of_purchase"
+        android:inputType="text|date"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/device_id"
+        app:layout_constraintTop_toBottomOf="@+id/services_offered" />
+
+    <EditText
+        android:id="@+id/user_id"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="User ID"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/invoice_no"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="@string/invoice_no"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/mob" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone|text"
+        android:paddingStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <EditText
+        android:id="@+id/services_offered"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Services offered"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/invoice_no" />
+
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_id" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iotaii.card_tracker.DeviceInfoActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/invoice_no_device_display"
+            android:layout_width="189dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/date_of_purchase_device_display" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="52dp"
+                android:backgroundTint="#1F1E1E"
+                android:text="Delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/update_device"
+                app:layout_constraintTop_toBottomOf="@+id/address_device_Display" />
+
+            <Button
+                android:id="@+id/update_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#1F1E1E"
+                android:text="@string/update"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addnew"
+                app:layout_constraintTop_toBottomOf="@+id/address_device_Display" />
+
+            <Button
+                android:id="@+id/addnew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="9dp"
+                android:backgroundTint="#090909"
+                android:text="Add New"
+                android:textColorLink="#0D0C0C"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="146dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="User ID"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="146dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="User Name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="149dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="Email ID"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="152dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="Mobile"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="1dp"
+            android:text="Date of Purchase"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="152dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="Invoice no"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="149dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="Device ID"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="156dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="Services offered"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="159dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="Phone number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/user_id_device_display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.71"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_name_device_display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/user_id_device_display" />
+
+        <TextView
+            android:id="@+id/email_id_device_display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_device_display" />
+
+        <TextView
+            android:id="@+id/mobile_device_display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/email_id_device_display" />
+
+        <TextView
+            android:id="@+id/date_of_purchase_device_display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/mobile_device_display" />
+
+        <TextView
+            android:id="@+id/device_id_device_display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/invoice_no_device_display" />
+
+        <TextView
+            android:id="@+id/services_offered_device_display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/device_id_device_display" />
+
+        <TextView
+            android:id="@+id/phone_device_display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/services_offered_device_display" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="156dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="1dp"
+            android:text="Address"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/address_device_Display"
+            android:layout_width="189dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="14dp"
+            android:paddingStart="1dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/phone_device_display" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
