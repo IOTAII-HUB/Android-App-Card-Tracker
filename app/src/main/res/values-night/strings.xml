@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome" translatable="false">Welcome</string>
+    <string name="id_ntracker" translatable="false">Id\nTracker</string>
+    <string name="user_id" translatable="false">User-ID</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="mapbox_access_token" />
+
+</resources>

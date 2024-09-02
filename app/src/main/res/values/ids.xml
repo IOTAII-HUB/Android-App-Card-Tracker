@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnConnect" type="id" />
+    <item name="deviceIdTextView" type="id" />
+    <item name="nav_history" type="id" />
+    <item name="nav_device" type="id" />
+    <item name="mapView" type="id" />
+    <item name="Device" type="id" />
+    <item name="show" type="id" />
+    <item name="main" type="id" />
+</resources>

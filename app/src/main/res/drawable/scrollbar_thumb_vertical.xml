@@ -1,0 +1,6 @@
+<!-- res/drawable/scrollbar_thumb_vertical.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFEFE"/> <!-- Change color as needed -->
+    <corners android:radius="4dp"/> <!-- Rounded corners, adjust radius as needed -->
+    <size android:width="8dp" android:height="40dp"/> <!-- Adjust width and height as needed -->
+</shape>

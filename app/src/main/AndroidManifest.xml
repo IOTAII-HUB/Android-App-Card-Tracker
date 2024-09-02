@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/lightblue_gradient2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/lightblue_gradient2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Light"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.iotaii.card_tracker.DisplayAdminActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+        <activity
+            android:name="com.iotaii.card_tracker.DialogDeviceDeleteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+        <activity
+            android:name="com.iotaii.card_tracker.DialogUserDeleteActivityActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+        <activity
+            android:name="com.iotaii.card_tracker.NewDeviceRegistrationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+        <activity
+            android:name="com.iotaii.card_tracker.NewDeviceActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+        <activity
+            android:name="com.iotaii.card_tracker.DeviceInfoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+        <activity
+            android:name="com.iotaii.card_tracker.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iotaii.card_tracker.Phone"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.iotaii.card_tracker.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Material3.Light">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.iotaii.card_tracker.extraphone"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.iotaii.card_tracker.SecondActivity"
+            android:label="Tracking"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name="com.iotaii.card_tracker.History"
+            android:exported="true"
+            android:label="@string/title_activity_history"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name="com.iotaii.card_tracker.sub"
+            android:exported="true"
+            android:label="Subscription" />
+        <activity
+            android:name="com.iotaii.card_tracker.info"
+            android:exported="true" />
+        <activity
+            android:name="com.iotaii.card_tracker.product"
+            android:exported="true" />
+        <activity
+            android:name="com.iotaii.card_tracker.admin"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.iotaii.card_tracker.updateuser"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.iotaii.card_tracker.newuser"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+    </application>
+
+</manifest>
